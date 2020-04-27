@@ -1,0 +1,27 @@
+.auth-card {
+  width: 95%;
+  max-width: 450px;
+  margin: 5% auto 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+
+  .auth-card-title {
+    font-size: 20px;
+  }
+
+  .auth-card-content {
+    padding: 10px 0 0;
+  }
+}
+
+.fake-link {
+  color: #007bff;
+  text-decoration: none;
+  background-color: transparent;
+  cursor: pointer;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}

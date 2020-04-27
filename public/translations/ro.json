@@ -1,0 +1,137 @@
+{
+  "errors": {
+    "application": "Something went wrong, refresh the page, if the problem persist please contact us.",
+    "unauthorized": "Please login in order to access this.",
+    "forbidden": "You are not allowed to access this.",
+    "notFound": "The resource was not found.",
+    "email": {
+      "required": "Email is required",
+      "invalid": "Email is not valid",
+      "notRegistered": "Email is not registered"
+    },
+    "password": {
+      "required": "Password is required"
+    },
+    "account": {
+      "notActivated": "Please activate your account before login"
+    },
+    "credentials": {
+      "invalid": "Email or password invalid"
+    },
+    "registerName": {
+      "required": "Name is required",
+      "name": "Name doesn't seems to be a name"
+    },
+    "registerEmail": {
+      "required": "Email is required",
+      "invalid": "Email is not valid",
+      "registered": "There is already an account with this email"
+    },
+    "registerPassword": {
+      "required": "Password is required",
+      "min8": "Password has to be at least 8 chars",
+      "complexity": "Password must have an upper letter, a lower letter, a number and a special char"
+    },
+    "registerRetypePassword": {
+      "required": "Retype password is required",
+      "same": "Retype password must be same as password"
+    },
+    "activateEmail": {
+      "required": "Email is required",
+      "invalid": "Email is not valid",
+      "notRegistered": "Email is not registered"
+    },
+    "activateCode": {
+      "required": "Code is required",
+      "activated": "Account is already activated",
+      "sendCooldown": "You can request a new code after 1 min",
+      "wrong": "Code is not valid"
+    },
+    "forgotAccount": {
+      "notActivated": "Please activate your account before login"
+    },
+    "forgotEmail": {
+      "required": "Email is required",
+      "invalid": "Email is not valid",
+      "notRegistered": "There is no account with this email"
+    },
+    "forgotCode": {
+      "required": "Code is required",
+      "sendCooldown": "You can request a new code after 1 min",
+      "invalid": "Code is not valid",
+      "passed1H": "You need to request a new code, more than 1 hour passed from forgot request"
+    },
+    "forgotPassword": {
+      "required": "Password is required",
+      "min8": "Password has to be at least 8 chars",
+      "complexity": "Password must have an upper letter, a lower letter, a number and a special char"
+    },
+    "forgotRetypePassword": {
+      "required": "Retype password is required",
+      "same": "Retype password must be same as password"
+    }
+  },
+  "header": {
+    "home": "Home",
+    "login": "Sign In",
+    "register": "Sign Up",
+    "profile": "Profile",
+    "logout": "Logout"
+  },
+  "login": {
+    "title": "Login",
+    "email": "Email",
+    "emailPlaceholder": "Email...",
+    "password": "Password",
+    "passwordPlaceholder": "Password...",
+    "rememberMe": "Remember",
+    "submit": "Login",
+    "forgotPassword": "Forgot password?",
+    "register": "Create account"
+  },
+  "forgotPassword": {
+    "title": "Forgot password",
+    "email": "Email",
+    "emailPlaceholder": "Email...",
+    "submit": "Reset password",
+    "login": "Login",
+    "haveACode": "Have a reset code?",
+    "code": "Code",
+    "codePlaceholder": "Code...",
+    "codeEmail": "Email",
+    "codeEmailPlaceholder": "Email...",
+    "password": "Password",
+    "passwordPlaceholder": "Password...",
+    "submitCode": "Change password",
+    "tryAgain": "Did not received the email, click to retry",
+    "infoCode": "Check your email address and enter the code received below together with a new password",
+    "infoLogin": "Password successfully updated, you can login now"
+  },
+  "register": {
+    "title": "Create account",
+    "name": "Name",
+    "namePlaceholder": "Name...",
+    "email": "Email",
+    "emailPlaceholder": "Email...",
+    "password": "Password",
+    "passwordPlaceholder": "Password...",
+    "retypePassword": "Retype password",
+    "retypePasswordPlaceholder": "Retype password...",
+    "rememberMe": "Remember",
+    "submit": "Register",
+    "login": "Login",
+    "codeTitle": "Activate account",
+    "code": "Code",
+    "codePlaceholder": "Code...",
+    "codeEmail": "Email",
+    "codeEmailPlaceholder": "Email...",
+    "submitCode": "Activate account",
+    "showActivate": "Have an activation code?",
+    "back": "Back to create account",
+    "infoCode": "Check your email address and enter the code received below",
+    "infoLogin": "Your account was activated, you can login now",
+    "resendCodeInfo": "Did not received the email, click below to resend",
+    "resendCode": "Resend",
+    "infoCodeResend": "The email was resent"
+  }
+}

@@ -1,0 +1,58 @@
+version: '3'
+services:
+  react-nginx:
+    container_name: react-nginx
+    build:
+      context: ./
+      dockerfile: docker/nginx/Dockerfile
+      args:
+        VHOST_FILE: ${VHOST_FILE}
+    volumes:
+      - ./:/var/www
+    ports:
+      - 80
+    restart: unless-stopped
+    depends_on:
+      - react-node
+    environment:
+      VIRTUAL_HOST: ${VIRTUAL_HOSTS}
+      VIRTUAL_PORT: 80
+      LETSENCRYPT_HOST: ${LETSENCRYPT_HOST}
+      LETSENCRYPT_EMAIL: ${LETSENCRYPT_EMAIL}
+    networks:
+      - nginx-proxy
+      - react
+
+  react-node:
+    container_name: react-node
+    command: /bin/sh entrypoint.sh
+    build:
+      context: ./
+      dockerfile: docker/node/Dockerfile
+    volumes:
+      - ./:/var/www
+      - ./node_modules:/var/www/node_modules
+      - ../nginx-proxy/certs:/etc/certs
+    restart: unless-stopped
+    ports:
+      - 60015:60015
+    networks:
+      - react
+
+  react-redis:
+    container_name: react-redis
+    build:
+      context: ./
+      dockerfile: docker/redis/Dockerfile
+      args:
+        REDIS_PASSWORD: ${REACT_APP_REDIS_PASSWORD}
+    restart: unless-stopped
+    ports:
+      - 63795:6379
+    networks:
+      - react
+
+networks:
+  react:
+  nginx-proxy:
+    external: true
