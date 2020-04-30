@@ -80,6 +80,11 @@ function ForgotPassword(props) {
         }
     };
 
+    const _setShowCode = (value) => {
+        setErrors(false);
+        setShowCode(value);
+    }
+
     const _renderMain = () => {
         return <Fragment>
             {errors && errors.forgot && <Alert color={'warning'}>{errors.forgot}</Alert>}
@@ -102,7 +107,7 @@ function ForgotPassword(props) {
             </Form>
             <Link to={'login'}>{translate('forgotPassword.login')}</Link><br/>
             <span className={'fake-link'}
-                  onClick={() => setShowCode(true)}>{translate('forgotPassword.haveACode')}</span>
+                  onClick={() => _setShowCode(true)}>{translate('forgotPassword.haveACode')}</span>
         </Fragment>;
     }
 
@@ -167,7 +172,7 @@ function ForgotPassword(props) {
             </Form>
             <Link to={'login'}>{translate('forgotPassword.login')}</Link><br/>
             <span className={'fake-link'}
-                  onClick={() => setShowCode(false)}>{translate('forgotPassword.tryAgain')}</span>
+                  onClick={() => _setShowCode(false)}>{translate('forgotPassword.tryAgain')}</span>
         </Fragment>;
     }
 

@@ -1,4 +1,73 @@
 {
+  "home": {
+    "title": "Marketplace"
+  },
+  "header": {
+    "home": "Home",
+    "login": "Sign In",
+    "register": "Sign Up",
+    "profile": "Profile",
+    "logout": "Logout"
+  },
+  "login": {
+    "title": "Login",
+    "email": "Email",
+    "emailPlaceholder": "Email...",
+    "password": "Password",
+    "passwordPlaceholder": "Password...",
+    "rememberMe": "Remember",
+    "submit": "Login",
+    "forgotPassword": "Forgot password?",
+    "register": "Create account"
+  },
+  "forgotPassword": {
+    "title": "Forgot password",
+    "email": "Email",
+    "emailPlaceholder": "Email...",
+    "submit": "Reset password",
+    "login": "Login",
+    "haveACode": "Have a reset code?",
+    "code": "Code",
+    "codePlaceholder": "Code...",
+    "codeEmail": "Email",
+    "codeEmailPlaceholder": "Email...",
+    "password": "Password",
+    "passwordPlaceholder": "Password...",
+    "submitCode": "Change password",
+    "tryAgain": "Did not received the email, click to retry",
+    "infoCode": "Check your email address and enter the code received below together with a new password",
+    "infoLogin": "Password successfully updated, you can login now"
+  },
+  "register": {
+    "title": "Create account",
+    "name": "Name",
+    "namePlaceholder": "Name...",
+    "email": "Email",
+    "emailPlaceholder": "Email...",
+    "password": "Password",
+    "passwordPlaceholder": "Password...",
+    "retypePassword": "Retype password",
+    "retypePasswordPlaceholder": "Retype password...",
+    "rememberMe": "Remember",
+    "submit": "Register",
+    "login": "Login",
+    "codeTitle": "Activate account",
+    "code": "Code",
+    "codePlaceholder": "Code...",
+    "codeEmail": "Email",
+    "codeEmailPlaceholder": "Email...",
+    "submitCode": "Activate account",
+    "showActivate": "Have an activation code?",
+    "back": "Back to create account",
+    "infoCode": "Check your email address and enter the code received below",
+    "infoLogin": "Your account was activated, you can login now",
+    "resendCodeInfo": "Did not received the email, click below to resend",
+    "resendCode": "Resend",
+    "infoCodeResend": "The email was resent"
+  },
+  "profile": {
+    "title": "My account"
+  },
   "errors": {
     "application": "Something went wrong, refresh the page, if the problem persist please contact us.",
     "unauthorized": "Please login in order to access this.",
@@ -70,68 +139,5 @@
       "required": "Retype password is required",
       "same": "Retype password must be same as password"
     }
-  },
-  "header": {
-    "home": "Home",
-    "login": "Sign In",
-    "register": "Sign Up",
-    "profile": "Profile",
-    "logout": "Logout"
-  },
-  "login": {
-    "title": "Login",
-    "email": "Email",
-    "emailPlaceholder": "Email...",
-    "password": "Password",
-    "passwordPlaceholder": "Password...",
-    "rememberMe": "Remember",
-    "submit": "Login",
-    "forgotPassword": "Forgot password?",
-    "register": "Create account"
-  },
-  "forgotPassword": {
-    "title": "Forgot password",
-    "email": "Email",
-    "emailPlaceholder": "Email...",
-    "submit": "Reset password",
-    "login": "Login",
-    "haveACode": "Have a reset code?",
-    "code": "Code",
-    "codePlaceholder": "Code...",
-    "codeEmail": "Email",
-    "codeEmailPlaceholder": "Email...",
-    "password": "Password",
-    "passwordPlaceholder": "Password...",
-    "submitCode": "Change password",
-    "tryAgain": "Did not received the email, click to retry",
-    "infoCode": "Check your email address and enter the code received below together with a new password",
-    "infoLogin": "Password successfully updated, you can login now"
-  },
-  "register": {
-    "title": "Create account",
-    "name": "Name",
-    "namePlaceholder": "Name...",
-    "email": "Email",
-    "emailPlaceholder": "Email...",
-    "password": "Password",
-    "passwordPlaceholder": "Password...",
-    "retypePassword": "Retype password",
-    "retypePasswordPlaceholder": "Retype password...",
-    "rememberMe": "Remember",
-    "submit": "Register",
-    "login": "Login",
-    "codeTitle": "Activate account",
-    "code": "Code",
-    "codePlaceholder": "Code...",
-    "codeEmail": "Email",
-    "codeEmailPlaceholder": "Email...",
-    "submitCode": "Activate account",
-    "showActivate": "Have an activation code?",
-    "back": "Back to create account",
-    "infoCode": "Check your email address and enter the code received below",
-    "infoLogin": "Your account was activated, you can login now",
-    "resendCodeInfo": "Did not received the email, click below to resend",
-    "resendCode": "Resend",
-    "infoCodeResend": "The email was resent"
   }
 }

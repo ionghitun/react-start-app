@@ -109,6 +109,11 @@ function Register(props) {
         }
     };
 
+    const _setShowCode = (value) => {
+        setErrors(false);
+        setShowCode(value);
+    }
+
     const _renderMain = () => {
         return <Fragment>
             <Form onSubmit={_register}>
@@ -167,7 +172,7 @@ function Register(props) {
                 <Button type={'submit'} onClick={_register}>{translate('register.submit')}</Button>
             </Form>
             <Link to={'login'}>{translate('register.login')}</Link><br/>
-            <span className={'fake-link'} onClick={() => setShowCode(true)}>{translate('register.showActivate')}</span>
+            <span className={'fake-link'} onClick={() => _setShowCode(true)}>{translate('register.showActivate')}</span>
         </Fragment>;
     }
 
@@ -209,7 +214,7 @@ function Register(props) {
                 <Button type={'submit'} onClick={_activate}>{translate('register.submitCode')}</Button>
             </Form>
             <Link to={'login'}>{translate('register.login')}</Link><br/>
-            <span className={'fake-link'} onClick={() => setShowCode(false)}>{translate('register.back')}</span>
+            <span className={'fake-link'} onClick={() => _setShowCode(false)}>{translate('register.back')}</span>
         </Fragment>;
     }
 
